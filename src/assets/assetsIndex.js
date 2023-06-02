@@ -1,5 +1,5 @@
 import logo from "./images/JGG-logo.png";
-import rightBannerImg from "./images/rightBanner.png";
+import rightBannerImg from "./images/bannerImg2.png";
 import DegreeCert from "./images/certificates/Bachelor Certificate.jpg";
 import cssCert from "./images/certificates/css.png";
 import javascriptCert from "./images/certificates/javascript cert.png";

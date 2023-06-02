@@ -7,7 +7,7 @@ const RightBanner = () => {
         <img 
             src={rightBannerImg}
             alt="bannerImage" 
-            className="rounded-lg top-0 left-0 w-full h-screen object-cover z-10" 
+            className="w-[500px] h-[680px] z-10" 
         />
     </>
   )
