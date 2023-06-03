@@ -5,6 +5,7 @@ import cssCert from "./images/certificates/css.png";
 import javascriptCert from "./images/certificates/javascript cert.png";
 import contactImg from "./images/contacts/contactImg.png";
 import project1 from "./images/projects/project1-travel-reservation.png";
+import project2 from "./images/projects/myportfolioImg.png";
 
 export {
     logo,
@@ -14,4 +15,5 @@ export {
     javascriptCert,
     contactImg,
     project1,
+    project2,
 };
