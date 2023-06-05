@@ -1,13 +1,24 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.a3bc2bb3.css",
-    "main.js": "/my-portfolio/static/js/main.ab4b43b5.js",
+    "main.css": "/my-portfolio/static/css/main.4a30ae77.css",
+    "main.js": "/my-portfolio/static/js/main.f53bba5c.js",
+    "static/media/project1-travel-reservation.png": "/my-portfolio/static/media/project1-travel-reservation.ce18b569022c9f74e26b.png",
+    "static/media/NEUST-MGT.png": "/my-portfolio/static/media/NEUST-MGT.d02ba8d0b80d2b27db37.png",
+    "static/media/TSCS1.png": "/my-portfolio/static/media/TSCS1.5188de1116bd8bd309b3.png",
+    "static/media/myportfolioImg.png": "/my-portfolio/static/media/myportfolioImg.ec506f15476363d102ef.png",
+    "static/media/bannerImg2.png": "/my-portfolio/static/media/bannerImg2.215992cbcf6b4f4ec2f8.png",
+    "static/media/Bachelor Certificate.jpg": "/my-portfolio/static/media/Bachelor Certificate.8416323760c6a8da3a1b.jpg",
+    "static/media/SRNHS.png": "/my-portfolio/static/media/SRNHS.5b7dafed5852f54a1535.png",
+    "static/media/javascript cert.png": "/my-portfolio/static/media/javascript cert.995cb622bfe1520a4583.png",
+    "static/media/contactImg.png": "/my-portfolio/static/media/contactImg.8ddfbfd11798f881db54.png",
+    "static/media/css.png": "/my-portfolio/static/media/css.d8f603f67cc7a3f03883.png",
+    "static/media/JGG-logo.png": "/my-portfolio/static/media/JGG-logo.97b1bd5b8c60c577d71e.png",
     "index.html": "/my-portfolio/index.html",
-    "main.a3bc2bb3.css.map": "/my-portfolio/static/css/main.a3bc2bb3.css.map",
-    "main.ab4b43b5.js.map": "/my-portfolio/static/js/main.ab4b43b5.js.map"
+    "main.4a30ae77.css.map": "/my-portfolio/static/css/main.4a30ae77.css.map",
+    "main.f53bba5c.js.map": "/my-portfolio/static/js/main.f53bba5c.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3bc2bb3.css",
-    "static/js/main.ab4b43b5.js"
+    "static/css/main.4a30ae77.css",
+    "static/js/main.f53bba5c.js"
   ]
 }
