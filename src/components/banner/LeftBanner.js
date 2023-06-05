@@ -1,7 +1,7 @@
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { FaFacebookF, FaGithub, FaLinkedinIn, FaReact } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs, SiLaravel } from "react-icons/si";
+import { SiTailwindcss, SiLaravel, SiMysql } from "react-icons/si";
 
 const LeftBanner = () => {
   const [text] = useTypewriter({
@@ -68,10 +68,10 @@ const LeftBanner = () => {
               <SiTailwindcss />
             </span>
             <span className="bannerIcon">
-              <SiNextdotjs />
-            </span>
-            <span className="bannerIcon">
               <SiLaravel />
+            </span>
+            <span className="bannerIcon text-4xl">
+              <SiMysql />
             </span>
           </div>
         </div>

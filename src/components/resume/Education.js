@@ -1,0 +1,38 @@
+import React from 'react'
+import ResumeCard from './ResumeCard'
+import { NEUSTMGTImg, SRNHSImg, TSCSImg } from '../../assets/assetsIndex'
+
+const Education = () => {
+  return (
+    <div>
+        <div className="py-12 font-titleFont">
+            <p className="text-sm text-designColor tracking-[4px]">2003 - 2017</p>
+            <h2 className="text-4xl font-bold">Educational Background</h2>
+        </div>
+        <div className='flex items-center justify-center'>
+            <div className='mt-14 w-[50%] h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10'>
+                <ResumeCard 
+                    title='BSIT(Major in Database Application Programming)' 
+                    subTitle='Nueva Ecija University of Science and Technology - MGT (2013-2017)' 
+                    des='I had the privilege of being recognized as a dedicated scholar throughout my entire academic journey, starting from my first year and continuing until the completion of the course.'
+                    src={NEUSTMGTImg}
+                />
+                <ResumeCard 
+                    title='Secondary' 
+                    subTitle='San Ricardo National High School (2009-2013)' 
+                    des='In my time, I was a part of the first section, known as the Special Science Class.'
+                    src={SRNHSImg}
+                />
+                <ResumeCard 
+                    title='Elementary' 
+                    subTitle='Talavera South Central School (2003-2009' 
+                    des="I'm one of the top 10 students in the classroom every year."
+                    src={TSCSImg}
+                />
+            </div>
+        </div>
+    </div>
+  )
+}
+
+export default Education
