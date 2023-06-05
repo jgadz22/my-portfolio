@@ -1,10 +1,14 @@
 import React from 'react'
 import ResumeCard from './ResumeCard'
 import { NEUSTMGTImg, SRNHSImg, TSCSImg } from '../../assets/assetsIndex'
+import { motion } from 'framer-motion';
 
 const Education = () => {
   return (
-    <div>
+    <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1, transition: { duration: 0.5 } }}
+    > 
         <div className="py-12 font-titleFont">
             <p className="text-sm text-designColor tracking-[4px]">2003 - 2017</p>
             <h2 className="text-4xl font-bold">Educational Background</h2>
@@ -31,7 +35,7 @@ const Education = () => {
                 />
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 
