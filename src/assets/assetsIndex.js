@@ -9,13 +9,14 @@ import project2 from "./images/projects/myportfolioImg.png";
 import NEUSTMGTImg from "./images/school/NEUST-MGT.png";
 import SRNHSImg from "./images/school/SRNHS.png";
 import TSCSImg from "./images/school/TSCS1.png";
-import CSSImg from "./images/skills/css.png";
+import cssImg from "./images/skills/css.png";
 import firebaseImg from "./images/skills/firebase.png";
 import githubImg from "./images/skills/github.png";
 import htmlImg from "./images/skills/html.png";
 import jsImg from "./images/skills/javascript.png";
 import nodeImg from "./images/skills/node.png";
 import phpImg from "./images/skills/php.png";
+import javaImg from "./images/skills/java.png";
 
 export {
     logo,
@@ -29,11 +30,12 @@ export {
     NEUSTMGTImg,
     SRNHSImg,
     TSCSImg,
-    CSSImg,
+    cssImg,
     firebaseImg,
     githubImg,
     htmlImg,
     jsImg,
     nodeImg,
     phpImg,
+    javaImg,
 };
