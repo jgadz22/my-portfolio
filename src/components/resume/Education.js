@@ -9,7 +9,7 @@ const Education = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { duration: 0.5 } }}
     > 
-        <div className="py-12 font-titleFont">
+        <div className="py-12 font-titleFont flex flex-col gap-4">
             <p className="text-sm text-designColor tracking-[4px]">2003 - 2017</p>
             <h2 className="text-4xl font-bold">Educational Background</h2>
         </div>
