@@ -29,7 +29,7 @@ const Education = () => {
                 />
                 <ResumeCard 
                     title='Elementary' 
-                    subTitle='Talavera South Central School (2003-2009' 
+                    subTitle='Talavera South Central School (2003-2009)' 
                     des="I'm one of the top 10 students in the classroom every year."
                     src={TSCSImg}
                 />

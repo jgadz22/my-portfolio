@@ -14,9 +14,11 @@ const Banner = () => {
       <div className="w-1/2 flex flex-col gap-20">
         <LeftBanner />
       </div>
-      <div className="w-1/2 ml-10 mr-5 flex justify-center items-center relative ">
+      <div className="w-1/2 flex justify-center items-center relative">
+        <div className="w-full justify-end flex items-center mr-5">
         <RightBanner />
         <div className="absolute bottom-0 w-[500px] h-[500px] bg-gradient-to-r from-[#1e2024] to-[#202327] shadow-shadowOne flex justify-center items-center"></div>
+        </div>
       </div>
     </section>
   );

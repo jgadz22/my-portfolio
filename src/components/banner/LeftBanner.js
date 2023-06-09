@@ -32,7 +32,7 @@ const LeftBanner = () => {
             cursorColor="#46eb34"
           />
         </h2>
-        <p className="text-base font-bodyFont leading-6 tracking-wide">
+        <p className="text-base font-bodyFont leading-6 tracking-wide text-justify">
           I bring a creative flair and technical expertise to craft visually
           stunning and responsive web interfaces. Committed to continuous
           learning, I stay up to date with the latest technologies, driving
