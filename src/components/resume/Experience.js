@@ -93,7 +93,7 @@ const Experience = () => {
         <p className="text-sm text-designColor tracking-[4px]">2017 - 2023</p>
         <h2 className="text-4xl font-bold">Work Experience</h2>
       </div>
-      <div className="w-full h-screen">
+      <div className="w-full h-[60vh]">
         <Slider {...settings}>
           <div>
             <ExperienceCard 

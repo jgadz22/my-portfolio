@@ -46,13 +46,13 @@ const LeftBanner = () => {
           </h2>
           <div className="flex gap-4">
             <span className="bannerIcon">
-              <FaFacebookF />
+              <a href="https://www.facebook.com/joseph.gadiaza/"><FaFacebookF /></a>
             </span>
             <span className="bannerIcon">
-              <FaGithub />
+              <a href="https://www.github.com/jgadz22"><FaGithub /></a>
             </span>
             <span className="bannerIcon">
-              <FaLinkedinIn />
+              <a href="https://www.linkedin.com/in/joseph-gadiaza-31b7311a1/"><FaLinkedinIn /></a>
             </span>
           </div>
         </div>

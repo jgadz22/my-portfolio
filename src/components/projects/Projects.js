@@ -17,11 +17,15 @@ const Projects = () => {
                 title='Travel Reservation'
                 desc='A simple Landing Page for a Travel Reservation created with React JS and Tailwind CSS.'
                 src={project1}
+                links='https://jgadz22.github.io/travel-reservation/'
+                git='https://github.com/jgadz22/travel-reservation'
             />
             <ProjectCard 
                 title='My Portfolio'
                 desc="A collection of my creative endeavors and professional achievements. Here, you'll find a diverse range of projects that showcase my skills and passion across various disciplines."
                 src={project2}
+                links='https://jgadz22.github.io/my-portfolio/'
+                git='https://github.com/jgadz22/my-portfolio'
             />
         </div>
     </section>
