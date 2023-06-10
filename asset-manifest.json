@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.3076d024.css",
-    "main.js": "/my-portfolio/static/js/main.d00841b8.js",
+    "main.css": "/my-portfolio/static/css/main.cdf0c517.css",
+    "main.js": "/my-portfolio/static/js/main.79f9b2d9.js",
     "static/media/project1-travel-reservation.png": "/my-portfolio/static/media/project1-travel-reservation.ce18b569022c9f74e26b.png",
     "static/media/NEUST-MGT.png": "/my-portfolio/static/media/NEUST-MGT.d02ba8d0b80d2b27db37.png",
     "static/media/TSCS1.png": "/my-portfolio/static/media/TSCS1.5188de1116bd8bd309b3.png",
     "static/media/myportfolioImg.png": "/my-portfolio/static/media/myportfolioImg.ec506f15476363d102ef.png",
     "static/media/bannerImg2.png": "/my-portfolio/static/media/bannerImg2.215992cbcf6b4f4ec2f8.png",
     "static/media/Bachelor Certificate.jpg": "/my-portfolio/static/media/Bachelor Certificate.8416323760c6a8da3a1b.jpg",
+    "static/media/contact.png": "/my-portfolio/static/media/contact.e8a6b2fe5833c01fe620.png",
     "static/media/SRNHS.png": "/my-portfolio/static/media/SRNHS.5b7dafed5852f54a1535.png",
     "static/media/java.png": "/my-portfolio/static/media/java.fdabd4e11f1235e4e8e0.png",
     "static/media/javascript cert.png": "/my-portfolio/static/media/javascript cert.995cb622bfe1520a4583.png",
-    "static/media/contactImg.png": "/my-portfolio/static/media/contactImg.8ddfbfd11798f881db54.png",
     "static/media/css.png": "/my-portfolio/static/media/css.69a82c2d9e45c933a9cb.png",
     "static/media/JGG-logo.png": "/my-portfolio/static/media/JGG-logo.97b1bd5b8c60c577d71e.png",
     "static/media/node.png": "/my-portfolio/static/media/node.952a9ea986dcfa5229ad.png",
@@ -21,11 +21,11 @@
     "static/media/firebase.png": "/my-portfolio/static/media/firebase.209703cedf1b1a96bc52.png",
     "static/media/javascript.png": "/my-portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/my-portfolio/index.html",
-    "main.3076d024.css.map": "/my-portfolio/static/css/main.3076d024.css.map",
-    "main.d00841b8.js.map": "/my-portfolio/static/js/main.d00841b8.js.map"
+    "main.cdf0c517.css.map": "/my-portfolio/static/css/main.cdf0c517.css.map",
+    "main.79f9b2d9.js.map": "/my-portfolio/static/js/main.79f9b2d9.js.map"
   },
   "entrypoints": [
-    "static/css/main.3076d024.css",
-    "static/js/main.d00841b8.js"
+    "static/css/main.cdf0c517.css",
+    "static/js/main.79f9b2d9.js"
   ]
 }
