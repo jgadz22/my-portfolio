@@ -7,9 +7,9 @@ import Card from './Card';
 
 const Features = () => {
   return (
-    <section id='features' className='w-full py-20 border-b-[1px] border-b-black'>
+    <section id='features' className='px-4 w-full py-20 border-b-[1px] border-b-black'>
       <Title title='Features' desc='What I Do?' />
-      <div className='grid grid-cols-3 gap-20'>
+      <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 xl:gap-20 gap-6'>
         <Card 
           title="Website/App Design"
           des="Translate visual concepts into functional interfaces, then create wireframes, mockups, and prototypes, ensuring that the design is aesthetically pleasing and user-friendly."

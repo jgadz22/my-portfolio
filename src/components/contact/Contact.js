@@ -9,13 +9,13 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="w-full py-20 border-b-[1px] border-b-black"
+      className="w-full py-20 border-b-[1px] border-b-black px-4"
     >
       <div className="flex justify-center items-center text-center">
         <Title title="CONTACT" desc="Reach me out anytime" />
       </div>
       <div className="w-full mb-20">
-        <div className="w-full h-auto flex justify-between">
+        <div className="w-full h-auto flex flex-col lgl:flex-row justify-between">
           <ContactLeft />
           <ContactRight />
         </div>

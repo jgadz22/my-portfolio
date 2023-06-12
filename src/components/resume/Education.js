@@ -14,11 +14,11 @@ const Education = () => {
             <h2 className="text-4xl font-bold">Educational Background</h2>
         </div>
         <div className='flex items-center justify-center'>
-            <div className='mt-14 w-[50%] h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10'>
+            <div className='mt-14 w-full md:w-[75%] xl:w-[50%] h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10'>
                 <ResumeCard 
                     title='BSIT(Major in Database Application Programming)' 
                     subTitle='Nueva Ecija University of Science and Technology - MGT (2013-2017)' 
-                    des='I had the privilege of being recognized as a dedicated scholar throughout my entire academic journey, starting from my first year and continuing until the completion of the course.'
+                    des='I had the privilege of being recognized as a dedicated scholar throughout my entire academic journey.'
                     src={NEUSTMGTImg}
                 />
                 <ResumeCard 

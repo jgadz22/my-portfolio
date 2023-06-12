@@ -8,7 +8,7 @@ function SampleNextArrow(props) {
   const { onClick } = props;
   return (
     <div
-      className="w-14 h-12 bg-[#0c1821] hover:bg-black duration-300 rounded-md text-2xl text-gray-400 flex justify-center items-center absolute top-[45%] right-0 shadow-shadowOne cursor-pointer z-10"
+      className="w-10 h-8 mdl:w-14 mdl:h-12 bg-[#0c1821] hover:bg-black duration-300 rounded-md text-xl mdl:text-2xl text-gray-400 flex justify-center items-center absolute mdl:top-[45%] right-0 bottom-0 shadow-shadowOne cursor-pointer z-10"
       onClick={onClick}
     >
       {" "}
@@ -21,7 +21,7 @@ function SamplePrevArrow(props) {
   const { onClick } = props;
   return (
     <div
-      className="w-14 h-12 bg-[#0c1821] hover:bg-black duration-300 rounded-md text-2xl text-gray-400 flex justify-center items-center absolute top-[45%] left-0 shadow-shadowOne cursor-pointer z-10"
+      className="w-10 h-8 mdl:w-14 mdl:h-12 bg-[#0c1821] hover:bg-black duration-300 rounded-md text-xl mdl:text-2xl text-gray-400 flex justify-center items-center absolute mdl:top-[45%] left-0 bottom-0 shadow-shadowOne cursor-pointer z-10"
       onClick={onClick}
     >
       {" "}
@@ -93,9 +93,9 @@ const Experience = () => {
         <p className="text-sm text-designColor tracking-[4px]">2017 - 2023</p>
         <h2 className="text-4xl font-bold">Work Experience</h2>
       </div>
-      <div className="w-full h-[60vh]">
+      <div className="w-full h-full items-center justify-center gap-5">
         <Slider {...settings}>
-          <div>
+          <div className="w-full h-full md:w-[90%] mdl:w-[65%] flex items-center justify-center">
             <ExperienceCard 
               position = "IT Specialist"
               year = "(Jul 2022 - Jan 2023)"

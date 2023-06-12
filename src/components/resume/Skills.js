@@ -9,13 +9,13 @@ const Skills = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 0.5 } }}
     >
-      <div className="py-12 font-titleFont flex flex-col gap-4">
+      <div className="py-12 font-titleFont flex flex-col gap-4 mb-10">
         <p className="text-sm text-designColor tracking-[4px]">OTHER</p>
         <h2 className="text-4xl font-bold">Development Skills</h2>
       </div>
 
-      <div className="flex justify-between items-center gap-10">
-        <div className="w-1/2">
+      <div className="flex flex-col xl:flex-row justify-between items-center gap-0 xl:gap-10">
+        <div className="w-full xl:w-1/2">
           <SkillsCard 
             title='Javascript'
             img={jsImg}
@@ -38,7 +38,7 @@ const Skills = () => {
           />
         </div>
 
-        <div className="w-1/2">
+        <div className="w-full xl:w-1/2">
           <SkillsCard 
             title='HTML'
             img={htmlImg}

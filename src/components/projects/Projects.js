@@ -7,12 +7,12 @@ const Projects = () => {
   return (
     <section 
         id='projects'
-        className='w-full py-20 border-b-[1px] border-b-black'
+        className='w-full py-20 border-b-[1px] border-b-black px-4'
     >
         <div className="flex justify-center items-center text-center">
-            <Title title='VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK' desc='My Projects' />
+            <Title title='VISIT MY PORTFOLIO' desc='My Projects' />
         </div>
-        <div className='grid grid-cols-2 gap-14'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-6 xl:gap-14'>
             <ProjectCard 
                 title='Travel Reservation'
                 desc='A simple Landing Page for a Travel Reservation created with React JS and Tailwind CSS.'

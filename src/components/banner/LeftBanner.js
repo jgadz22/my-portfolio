@@ -16,15 +16,15 @@ const LeftBanner = () => {
     delaySpeed: 2000,
   });
   return (
-    <>
-      <div className="w-1/2 flex flex-col gap-20"></div>
+    
+    <div className="w-full lgl:w-1/2 flex flex-col gap-20">
       <div className="flex flex-col gap-5">
         <h4 className="text-lg font-normal">WELCOME TO MY PORTFOLIO</h4>
-        <h1 className="text-6xl font-bold text-white">
+        <h1 className="text-5xl mdl:text-6xl font-bold text-white">
           Hi, I'm
           <span className="text-designColor capitalize"> Joseph</span>
         </h1>
-        <h2 className="text-4xl font-bold text-white">
+        <h2 className="text-2xl mdl:text-4xl font-bold text-white">
           a <span>{text}</span>
           <Cursor
             cursorBlinking="false"
@@ -39,7 +39,7 @@ const LeftBanner = () => {
           innovation and exceeding expectations in every project.
         </p>
       </div>
-      <div className="flex justify-between">
+      <div className="flex flex-col xl:flex-row gap-6 xl:gap-0 justify-between">
         <div>
           <h2 className="text-base uppercase font-titleFont mb-4">
             Find me in
@@ -76,7 +76,7 @@ const LeftBanner = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

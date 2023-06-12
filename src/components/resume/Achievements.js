@@ -13,7 +13,7 @@ const Achievements = () => {
         <p className="text-sm text-designColor tracking-[4px]">My</p>
         <h2 className="text-4xl font-bold">Achivements</h2>
       </div>
-      <div className="grid grid-cols-2 gap-14 ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 xl:gap-10 gap-6">
         <AchievementCard
           title="Responsive Web Design"
           desc="This Certification teaches the essential languages used in webpage development: HTML for content and CSS for design. It covers building a cat photo app, utilizing modern techniques like CSS variables, implementing accessibility best practices, and creating responsive layouts with Flexbox and CSS Grid."
