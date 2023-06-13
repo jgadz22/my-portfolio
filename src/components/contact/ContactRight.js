@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const ContactRight = () => {
+  const form = useRef();
   const [fullName, SetFullName] = useState("");
   const [phoneNumber, SetPhoneNumber] = useState("");
   const [email, SetEmail] = useState("");
@@ -8,6 +10,7 @@ const ContactRight = () => {
   const [message, SetMessage] = useState("");
   const [errorMessage, SetErrorMessage] = useState("");
   const [successMessage, SetSuccessMessage] = useState("");
+  
 
   //   Email Validation
   const emailValidation = () => {
@@ -31,9 +34,26 @@ const ContactRight = () => {
     } else if (message === "") {
       SetErrorMessage("Message is required");
     } else {
-      SetSuccessMessage(
-        `Thank you ${fullName}, your message has been sent successfully.`
-      );
+      emailjs
+        .sendForm(
+          process.env.REACT_APP_EMAILJS_SERVICE_ID,
+          process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+          form.current,
+          process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            e.target.reset();
+            SetSuccessMessage(
+              `Thank you ${fullName}, your message has been sent successfully.`
+            );
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+
       SetErrorMessage("");
       SetFullName("");
       SetPhoneNumber("");
@@ -44,7 +64,11 @@ const ContactRight = () => {
   };
   return (
     <div className="w-full lgl:w-[60%] h-full py-8 bg-gradient-to-r from-[#1e2024] to-[#202327] flex flex-col gap-8 px-4 lgl:px-8 rounded-lg shadow-shadowOne">
-      <form className="w-full flex flex-col gap-4 lgl:gap-6 py-2 lgl:py-5">
+      <form
+        ref={form}
+        onSubmit={handleSend}
+        className="w-full flex flex-col gap-4 lgl:gap-6 py-2 lgl:py-5"
+      >
         {errorMessage && (
           <p className="py-3 bg--gradient-to-r from-[#1e2024] to-[#202327] shadow-shadowOne text-center text-orange-500 text-base tracking-wide animate-bounce">
             {errorMessage}
@@ -64,6 +88,7 @@ const ContactRight = () => {
               onChange={(e) => SetFullName(e.target.value)}
               value={fullName}
               type="text"
+              name="fullName_set"
               className={` ${
                 errorMessage === "Full name is required" &&
                 "outline-designColor"
@@ -78,6 +103,7 @@ const ContactRight = () => {
               onChange={(e) => SetPhoneNumber(e.target.value)}
               value={phoneNumber}
               type="text"
+              name="phoneNumber_set"
               className={` ${
                 errorMessage === "Phone Number is required" &&
                 "outline-designColor"
@@ -93,6 +119,7 @@ const ContactRight = () => {
             onChange={(e) => SetEmail(e.target.value)}
             value={email}
             type="email"
+            name="email_set"
             className={` ${
               (errorMessage === "Email Address is required" ||
                 errorMessage === "Incorrect Email Address") &&
@@ -108,6 +135,7 @@ const ContactRight = () => {
             onChange={(e) => SetSubject(e.target.value)}
             value={subject}
             type="text"
+            name="subject_set"
             className={` ${
               errorMessage === "Subject is required" && "outline-designColor"
             } contactInput `}
@@ -120,6 +148,7 @@ const ContactRight = () => {
           <textarea
             onChange={(e) => SetMessage(e.target.value)}
             value={message}
+            name="message_set"
             cols="30"
             rows="8"
             className={` ${
@@ -128,10 +157,7 @@ const ContactRight = () => {
           ></textarea>
         </div>
         <div className="w-full">
-          <button
-            onClick={handleSend}
-            className="w-full h-12 hover:border-[1px] bg-[#141518] rounded-lg text-base text-gray-400 tracking-wider uppercase hover:text-white hover:border-designColor border-transparent duration-300"
-          >
+          <button className="w-full h-12 hover:border-[1px] bg-[#141518] rounded-lg text-base text-gray-400 tracking-wider uppercase hover:text-white hover:border-designColor border-transparent duration-300">
             Send Meassage
           </button>
         </div>
