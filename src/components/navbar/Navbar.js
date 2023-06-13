@@ -57,7 +57,7 @@ const Navbar = () => {
                 <p className="text-md text-gray-400 mt-2 text-justify p-2">
                   Embracing the Artistry of Front-End Development, Crafting
                   Immersive User Journeys with Meticulous Code, Stunning
-                  Visuals, and SeamlessInteractions.
+                  Visuals, and Seamless Interactions.
                 </p>
               </div>
               <ul className="flex flex-col gap-6 p-2 mt-2">
