@@ -1,6 +1,7 @@
 import React from "react";
 import { contactImg } from "../../assets/assetsIndex";
-import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
+import { FiPhoneCall, FiMail} from "react-icons/fi";
 
 const ContactLeft = () => {
   return (
@@ -27,7 +28,7 @@ const ContactLeft = () => {
         </p>
       </div>
       <div>
-        <h2 className="text-base uppercase font-titleFont mb-4">Find me in</h2>
+        <h2 className="text-base uppercase font-titleFont mb-4">Message/Call me in</h2>
         <div className="flex gap-4">
           <span className="bannerIcon">
             <a href="https://www.facebook.com/joseph.gadiaza/">
@@ -35,13 +36,13 @@ const ContactLeft = () => {
             </a>
           </span>
           <span className="bannerIcon">
-            <a href="https://www.github.com/jgadz22">
-              <FaGithub />
+            <a href="tel:+639511050865">
+              <FiPhoneCall />
             </a>
           </span>
           <span className="bannerIcon">
-            <a href="https://www.linkedin.com/in/joseph-gadiaza-31b7311a1/">
-              <FaLinkedinIn />
+            <a href="mailto:gadiazajoseph18@gmail.com">
+              <FiMail />
             </a>
           </span>
         </div>

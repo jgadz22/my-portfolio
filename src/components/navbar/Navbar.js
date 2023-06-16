@@ -9,9 +9,11 @@ import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
-    <div className="z-20 w-full h-24 sticky top-0 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
-      <div className="px-4">
-        <img src={logo} alt="logo" width="70" className="rounded-full" />
+    <div className="z-20 w-full h-20 lg:h-24 sticky top-0 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
+      <div className="px-4 cursor-pointer">
+        <Link to="home" spy={true} smooth={true} offset={-70} duration={500}>
+          <img src={logo} alt="logo" width="70" className="rounded-full" />
+        </Link>
       </div>
       <div className="px-4">
         <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">
@@ -40,21 +42,30 @@ const Navbar = () => {
           <FiMenu className="group-hover:scale-110 ease-in duration-300 text-white hover:text-designColor  " />
         </span>
         <div
-        className={
-          showMenu ? "mdl:hidden fixed left-0 top-0 w-[80%] md-[60%]  h-screen" : ""
-        }
-      >
-        {showMenu && (
-          <div className="w-[80%] md-[60%] h-screen overflow-scroll absolute top-0 left-0 bg-gray-900 p-4 scrollbar-hide">
+          className={
+            showMenu
+              ? "mdl:hidden fixed left-0 top-0 w-[80%] md-[60%]  h-screen"
+              : ""
+          }
+        >
+          <div
+            className={
+              showMenu
+                ? "w-[80%] md-[60%] h-screen overflow-scroll absolute top-0 left-0 bg-gray-900 p-2 scrollbar-hide ease-in duration-500"
+                : "w-[80%] md-[60%] h-screen overflow-scroll absolute top-0 left-[-100%] bg-gray-900 p-2 scrollbar-hide ease-in duration-500"
+            }
+          >
             <div>
-              <div>
+              <div className="cursor-pointer">
+              <Link to="home" spy={true} smooth={true} offset={-70} duration={500} onClick={() => setShowMenu(false)}>
                 <img
                   src={logo}
                   alt="logo"
                   width="70"
                   className="rounded-full"
                 />
-                <p className="text-md text-gray-400 mt-2 text-justify p-2">
+                </Link>
+                <p className="text-sm md:text-md text-gray-400 mt-2 p-2">
                   Embracing the Artistry of Front-End Development, Crafting
                   Immersive User Journeys with Meticulous Code, Stunning
                   Visuals, and Seamless Interactions.
@@ -84,7 +95,7 @@ const Navbar = () => {
                 <h2 className="text-base uppercase font-titleFont mb-4">
                   Find me in
                 </h2>
-                <div className="flex gap-4">
+                <div className="flex gap-4 px-2">
                   <span className="bannerIcon">
                     <a href="https://www.facebook.com/joseph.gadiaza/">
                       <FaFacebookF />
@@ -110,7 +121,6 @@ const Navbar = () => {
               <MdClose />
             </span>
           </div>
-        )}
         </div>
       </div>
     </div>

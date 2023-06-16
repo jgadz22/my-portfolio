@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const SkillsCard = ({ title, img, des }) => {
   return (
     <>
-        <div className="w-full h-80 md:h-60 lg:h-40 xl:h-60 bg-black bg-opacity-20 hover:bg-opacity-30 duration-300 rounded-lg px-10 flex justify-between item-center shadow-shadowOne relative mb-10 group">
+        <div className="w-full h-96 sm:h-80 md:h-60 lg:h-48 xl:h-80 bg-black bg-opacity-20 hover:bg-opacity-30 duration-300 rounded-lg px-5 md:px-10 flex justify-between item-center shadow-shadowOne relative mb-10 group gap-5">
             <div className="w-1/4 flex items-center left-0 group-hover:scale-110 ease-in duration-300">
                 <img src={img} width='75' height='75' alt='/'/>
             </div>
@@ -18,8 +18,8 @@ const SkillsCard = ({ title, img, des }) => {
                         animate={{ opacity: 1, transition: { duration: 0.5 } }}
                         
                     >
-                        <p className='text-md font-bodyFont'>
-                            <span className='text-xl font-bold text-designColor capitalize pr-[.5px]'>
+                        <p className='text-sm md:text-lg font-bodyFont'>
+                            <span className='text-lg md:text-xl font-bold text-designColor capitalize pr-[.8px]'>
                                 {title}
                             </span>
                             {des}
