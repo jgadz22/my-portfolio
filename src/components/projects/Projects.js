@@ -24,7 +24,7 @@ const Projects = () => {
                 title='My Portfolio'
                 desc="A collection of my creative endeavors and professional achievements. Here, you'll find a diverse range of projects that showcase my skills and passion across various disciplines."
                 src={project2}
-                links='https://jgadz22.github.io/my-portfolio/'
+                links='https://josephgadiaza.netlify.app/'
                 git='https://github.com/jgadz22/my-portfolio'
             />
         </div>

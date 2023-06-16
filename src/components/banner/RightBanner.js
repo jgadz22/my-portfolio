@@ -3,7 +3,7 @@ import { rightBannerImg } from "../../assets/assetsIndex";
 
 const RightBanner = () => {
   return (
-    <div className="w-full lgl:w-1/2 flex justify-center items-center relative">
+    <div className="w-full lgl:w-1/2 flex justify-center items-center relative px-4">
         <img 
             src={rightBannerImg}
             alt="bannerImage" 
