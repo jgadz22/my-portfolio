@@ -14,16 +14,16 @@ const ResumeCard = ({ title, subTitle, des, src }) => {
           src={src}
           alt={title}
         />
-        <div className="absolute top-0 w-[80%] mdl:w-[85%] h-full flex flex-col justify-center gap-10 duration-300 opacity-0 group-hover:opacity-100 px-2">
+        <div className="absolute top-0 w-[80%] mdl:w-[85%] h-full flex flex-col justify-center gap-10 duration-300 opacity-0 group-hover:opacity-100 px-2 sm:pr-0">
           <div className="w-full">
-            <h3 className="w-full text-xl md:text-2xl font-semibold group-hover:text-white">
+            <h3 className="w-full text-md md:text-2xl font-semibold group-hover:text-white pr-4 md:pr-0">
               {title}
             </h3>
-            <p className="w-full text-md mt-2 text-gray-400 group-hover:text-white">
+            <p className="w-full text-md mt-2 text-gray-400 group-hover:text-white pr-4 md:pr-0">
               {subTitle}
             </p>
           </div>
-          <p className="w-full text-base text-justify font-medium textgray-400 group-hover:text-gray-300">
+          <p className="w-full text-sm md:text-base text-justify font-medium textgray-400 group-hover:text-gray-300 pr-4 md:pr-0">
             {des}
           </p>
         </div>
