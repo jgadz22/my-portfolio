@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.dc3c5c1a.css",
-    "main.js": "/my-portfolio/static/js/main.16dddf03.js",
+    "main.css": "/my-portfolio/static/css/main.b25e3e80.css",
+    "main.js": "/my-portfolio/static/js/main.0c6927fd.js",
     "static/media/project1-travel-reservation.png": "/my-portfolio/static/media/project1-travel-reservation.ce18b569022c9f74e26b.png",
     "static/media/NEUST-MGT.png": "/my-portfolio/static/media/NEUST-MGT.d02ba8d0b80d2b27db37.png",
     "static/media/TSCS1.png": "/my-portfolio/static/media/TSCS1.5188de1116bd8bd309b3.png",
@@ -21,11 +21,11 @@
     "static/media/firebase.png": "/my-portfolio/static/media/firebase.209703cedf1b1a96bc52.png",
     "static/media/javascript.png": "/my-portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/my-portfolio/index.html",
-    "main.dc3c5c1a.css.map": "/my-portfolio/static/css/main.dc3c5c1a.css.map",
-    "main.16dddf03.js.map": "/my-portfolio/static/js/main.16dddf03.js.map"
+    "main.b25e3e80.css.map": "/my-portfolio/static/css/main.b25e3e80.css.map",
+    "main.0c6927fd.js.map": "/my-portfolio/static/js/main.0c6927fd.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc3c5c1a.css",
-    "static/js/main.16dddf03.js"
+    "static/css/main.b25e3e80.css",
+    "static/js/main.0c6927fd.js"
   ]
 }
