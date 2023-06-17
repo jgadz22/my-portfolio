@@ -95,7 +95,7 @@ const Experience = () => {
       </div>
       <div className="w-full h-full items-center justify-center gap-5">
         <Slider {...settings}>
-          <div className="w-full h-full md:w-[90%] mdl:w-[65%] flex items-center justify-center">
+          <div className="w-full h-full md:w-[90%] mdl:w-[85%] flex items-center justify-center">
             <ExperienceCard 
               position = "IT Specialist"
               year = "(Jul 2022 - Jan 2023)"

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const SkillsCard = ({ title, img, des }) => {
   return (
     <>
-        <div className="w-full h-96 sm:h-80 md:h-60 lg:h-48 xl:h-80 bg-black bg-opacity-20 hover:bg-opacity-30 duration-300 rounded-lg px-5 md:px-10 flex justify-between item-center shadow-shadowOne relative mb-10 group gap-5">
+        <div className="w-full h-96 sm:h-80 mdl:h-60 lgl:h-48 xl:h-80 bg-black bg-opacity-20 hover:bg-opacity-30 duration-300 rounded-lg px-5 md:px-10 flex justify-between item-center shadow-shadowOne relative mb-10 group gap-5">
             <div className="w-1/4 flex items-center left-0 group-hover:scale-110 ease-in duration-300">
                 <img src={img} width='75' height='75' alt='/'/>
             </div>
