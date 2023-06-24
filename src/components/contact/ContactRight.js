@@ -10,11 +10,22 @@ const ContactRight = () => {
   const [message, SetMessage] = useState("");
   const [errorMessage, SetErrorMessage] = useState("");
   const [successMessage, SetSuccessMessage] = useState("");
-  
+
+  //   full Name Validation
+  const fullNameValidation = (name) => {
+    let regex = /^[A-Za-z.\- ]+$/;
+    return regex.test(name);
+  };
+
+  //   Phone Number Validation
+  const phoneNumberValidation = (mobileNumber) => {
+    let regex = /^\d{7,15}$/;
+    return regex.test(mobileNumber);
+  };
 
   //   Email Validation
-  const emailValidation = () => {
-    return String(email)
+  const emailValidation = (userEmail) => {
+    return String(userEmail)
       .toLocaleLowerCase()
       .match(/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/);
   };
@@ -23,8 +34,12 @@ const ContactRight = () => {
     e.preventDefault();
     if (fullName === "") {
       SetErrorMessage("Full name is required");
+    } else if (!fullNameValidation(fullName)) {
+      SetErrorMessage("Please enter a valid Full Name");
     } else if (phoneNumber === "") {
       SetErrorMessage("Phone Number is required");
+    } else if (!phoneNumberValidation(phoneNumber)) {
+      SetErrorMessage("Phone Number accepted only 7-15 digits");
     } else if (email === "") {
       SetErrorMessage("Email Address is required");
     } else if (!emailValidation(email)) {
@@ -85,12 +100,14 @@ const ContactRight = () => {
               Full Name
             </p>
             <input
+              placeholder="Ex.: Joseph G. Gadiaza"
               onChange={(e) => SetFullName(e.target.value)}
               value={fullName}
               type="text"
               name="fullName_set"
               className={` ${
-                errorMessage === "Full name is required" &&
+                (errorMessage === "Full name is required" ||
+                  errorMessage === "Please enter a valid Full Name") &&
                 "outline-designColor"
               } contactInput `}
             />
@@ -100,12 +117,14 @@ const ContactRight = () => {
               Phone Number
             </p>
             <input
+             placeholder="Ex.: 9511050865"
               onChange={(e) => SetPhoneNumber(e.target.value)}
               value={phoneNumber}
               type="text"
               name="phoneNumber_set"
               className={` ${
-                errorMessage === "Phone Number is required" &&
+                (errorMessage === "Phone Number is required" ||
+                  errorMessage === "Phone Number accepted only 7-15 digits") &&
                 "outline-designColor"
               } contactInput `}
             />
@@ -116,6 +135,7 @@ const ContactRight = () => {
             Email Address
           </p>
           <input
+            placeholder="Ex.: gadiazajoseph18@gmail"
             onChange={(e) => SetEmail(e.target.value)}
             value={email}
             type="email"
