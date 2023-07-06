@@ -12,7 +12,7 @@ const ProjectCard = ({ title, desc, src, links, git }) => {
           alt="src"
         />
       </div>
-      <div className="w-full mt-5 flex flex-col gap-6">
+      <div className="w-full mt-2 xl:mt-5 flex flex-col gap-6">
         <div>
           <div className="flex justify-between items-center">
             <h3 className="text-base uppercase text-designColor font-normal">

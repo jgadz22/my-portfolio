@@ -6,6 +6,7 @@ import javascriptCert from "./images/certificates/javascript cert.png";
 import contactImg from "./images/contacts/contact.png";
 import project1 from "./images/projects/project1-travel-reservation.png";
 import project2 from "./images/projects/myportfolioImg.png";
+import project3 from "./images/projects/Netflixerjs.png";
 import NEUSTMGTImg from "./images/school/NEUST-MGT.png";
 import SRNHSImg from "./images/school/SRNHS.png";
 import TSCSImg from "./images/school/TSCS1.png";
@@ -38,4 +39,5 @@ export {
     nodeImg,
     phpImg,
     javaImg,
+    project3,
 };
