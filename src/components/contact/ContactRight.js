@@ -1,7 +1,14 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const ContactRight = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+  });
+  const animation = useAnimation();
+
   const form = useRef();
   const [fullName, SetFullName] = useState("");
   const [phoneNumber, SetPhoneNumber] = useState("");
@@ -77,8 +84,28 @@ const ContactRight = () => {
       SetMessage("");
     }
   };
+
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        opacity: "100%",
+        transition: {
+          duration: 3,
+          type: "spring",
+          bounce: 0.3,
+        },
+      });
+    }
+    if (!inView) {
+      animation.start({
+        opacity: "0%",
+      });
+    }
+  }, [inView, animation]);
   return (
-    <div className="w-full lgl:w-[60%] h-full py-8 bg-gradient-to-r from-[#1e2024] to-[#202327] flex flex-col gap-8 px-4 lgl:px-8 rounded-lg shadow-shadowOne">
+    <div className="w-full lgl:w-[60%]" ref={ref}>
+    <motion.div animate={animation}>
+    <div className="w-full h-full py-8 bg-gradient-to-r from-[#1e2024] to-[#202327] flex flex-col gap-8 px-4 lgl:px-8 rounded-lg shadow-shadowOne">
       <form
         ref={form}
         onSubmit={handleSend}
@@ -183,6 +210,8 @@ const ContactRight = () => {
         </div>
       </form>
     </div>
+    </motion.div>
+  </div>
   );
 };
 

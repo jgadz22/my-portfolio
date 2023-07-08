@@ -1,11 +1,37 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { contactImg } from "../../assets/assetsIndex";
 import { FaFacebookF } from "react-icons/fa";
 import { FiPhoneCall, FiMail} from "react-icons/fi";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const ContactLeft = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+  });
+  const animation = useAnimation();
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        opacity: "100%",
+        transition: {
+          duration: 3,
+          type: "spring",
+          bounce: 0.3,
+        },
+      });
+    }
+    if (!inView) {
+      animation.start({
+        opacity: "0%",
+      });
+    }
+  }, [inView, animation]);
+
   return (
-    <div className="w-full lgl:w-[35%] h-full bg-gradient-to-r from-[#1e2024] to-[#202327] p-4 lgl:p-8 rounded-lg shadow-shadowOne flex flex-col gap-8 justify-center mb-10 lgl:mb-0">
+  <div className="w-full lgl:w-[35%] " ref={ref}>
+    <motion.div animate={animation}>
+    <div className="w-full h-full bg-gradient-to-r from-[#1e2024] to-[#202327] p-4 lgl:p-8 rounded-lg shadow-shadowOne flex flex-col gap-8 justify-center mb-10 lgl:mb-0">
       <img
         className="w-full h-64 object-cover rounded-lg mb-2"
         src={contactImg}
@@ -48,6 +74,8 @@ const ContactLeft = () => {
         </div>
       </div>
     </div>
+    </motion.div>
+  </div>
   );
 };
 

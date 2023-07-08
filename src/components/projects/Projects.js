@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <section 
         id='projects'
-        className='w-full py-20 border-b-[1px] border-b-black px-4'
+        className='w-full py-20 border-b-[1px] border-b-black px-4 overflow-x-hidden'
     >
         <div className="flex justify-center items-center text-center">
             <Title title='VISIT MY PORTFOLIO' desc='My Projects' />
@@ -19,6 +19,7 @@ const Projects = () => {
                 src={project1}
                 links='https://jgadz22.github.io/travel-reservation/'
                 git='https://github.com/jgadz22/travel-reservation'
+                projRef = 'ref1'
             />
             <ProjectCard 
                 title='My Portfolio'
@@ -26,6 +27,7 @@ const Projects = () => {
                 src={project2}
                 links='https://jgadz22.github.io/my-portfolio/'
                 git='https://github.com/jgadz22/my-portfolio'
+                projRef = 'ref2'
             />
             <ProjectCard 
                 title='Netflixerjs'
@@ -33,6 +35,7 @@ const Projects = () => {
                 src={project3}
                 links='https://netflix-react-js-422f3.web.app'
                 git='https://github.com/jgadz22/netflix-react-js'
+                projRef = 'ref1'
             />
         </div>
     </section>

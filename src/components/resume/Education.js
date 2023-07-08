@@ -18,19 +18,19 @@ const Education = () => {
                 <ResumeCard 
                     title='BSIT(Major in Database Application Programming)' 
                     subTitle='Nueva Ecija University of Science and Technology - MGT (2013-2017)' 
-                    des='I had the privilege of being recognized as a dedicated scholar throughout my entire academic journey.'
+                    des='Nueva Ecija University of Science and Technology offers a comprehensive and enriching educational experience for students in the field of Information Technology. With a major in Database Application Programming, you will receive the necessary training and support to succeed in your chosen career path.'
                     src={NEUSTMGTImg}
                 />
                 <ResumeCard 
                     title='Secondary' 
                     subTitle='San Ricardo National High School (2009-2013)' 
-                    des='In my time, I was a part of the first section, known as the Special Science Class.'
+                    des='San Ricardo National High School is a reputable educational institution that plays a significant role in shaping the future of its students. It provides them with a strong foundation in education, equipping them with the necessary skills and knowledge to pursue their goals and aspirations in life.'
                     src={SRNHSImg}
                 />
                 <ResumeCard 
                     title='Elementary' 
                     subTitle='Talavera South Central School (2003-2009)' 
-                    des="I'm one of the top 10 students in the classroom every year."
+                    des="Talavera South Central School plays a significant role in laying a strong foundation for its students' education. It prepares them for their future academic endeavors, instilling in them a love for learning and the skills needed to excel in higher grades."
                     src={TSCSImg}
                 />
             </div>

@@ -1,9 +1,37 @@
-import React from 'react'
-import { motion } from 'framer-motion';
+import React, { useEffect } from 'react'
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
-const SkillsCard = ({ title, img, des }) => {
+const SkillsCard = ({ title, img, des, projRef }) => {
+    const { ref, inView } = useInView({
+      threshold: 0.2,
+    });
+
+    const animation = useAnimation();
+
+    useEffect(() => {
+      console.log(projRef);
+      if (inView) {
+        animation.start({
+          x: 0,
+          transition: {
+            duration: 3,
+            type: "spring",
+            bounce: 0.3,
+          },
+        });
+      }
+      if (!inView) {
+        animation.start({
+          x: projRef === "ref1" ? "-100%" : "100%",
+        });
+      }
+    }, [inView, animation]);
+
   return (
     <>
+    <div ref={ref}>
+      <motion.div animate={animation}>
         <div className="w-full h-96 sm:h-80 mdl:h-60 lgl:h-48 xl:h-80 bg-black bg-opacity-20 hover:bg-opacity-30 duration-300 rounded-lg px-5 md:px-10 flex justify-between item-center shadow-shadowOne relative mb-10 group gap-5">
             <div className="w-1/4 flex items-center left-0 group-hover:scale-110 ease-in duration-300">
                 <img src={img} width='75' height='75' alt='/'/>
@@ -28,6 +56,9 @@ const SkillsCard = ({ title, img, des }) => {
                 </div>
             </div>
         </div>
+        
+      </motion.div>
+    </div>
     </>
   )
 }

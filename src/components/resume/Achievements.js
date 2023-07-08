@@ -19,12 +19,14 @@ const Achievements = () => {
           desc="This Certification teaches the essential languages used in webpage development: HTML for content and CSS for design. It covers building a cat photo app, utilizing modern techniques like CSS variables, implementing accessibility best practices, and creating responsive layouts with Flexbox and CSS Grid."
           src={cssCert}
           site="https://www.freecodecamp.org/certification/JGadiaza/responsive-web-design"
+          projRef="ref1"
         />
         <AchievementCard
           title="JavaScript Algorithms and Data Structures"
           desc="This Certification teaches the basics of JavaScript for creating interactive webpages. It covers fundamental concepts like variables, arrays, objects, loops, and functions. You'll also learn about essential algorithms and explore Object-Oriented Programming (OOP) and Functional Programming (FP) paradigms."
           src={javascriptCert}
           site="https://www.freecodecamp.org/certification/JGadiaza/javascript-algorithms-and-data-structures"
+          projRef="ref2"
         />
       </div>
     </motion.div>

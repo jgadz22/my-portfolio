@@ -11,7 +11,7 @@ const Resume = () => {
   const [experienceData, setExperienceData] = useState(false);
   const [achievementData, setAchievementData] = useState(false);
   return (
-    <section id="resume" className="w-full px-4 py-20 border-b-[1px] border-b-black">
+    <section id="resume" className="w-full px-4 py-20 border-b-[1px] border-b-black overflow-x-hidden">
       <div className="flex justify-center items-center text-center">
         <Title title="VARIOUS EXPERIENCE" desc="My Resume" />
       </div>
