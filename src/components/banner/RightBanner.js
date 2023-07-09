@@ -12,17 +12,18 @@ const RightBanner = () => {
   useEffect(() => {
     if (inView) {
       animation.start({
-        x: 0,
+        opacity: "100%",
         transition: {
           duration: 1,
           type: "spring",
           bounce: 0.3,
         },
+        delay: 3,
       });
     }
     if (!inView) {
       animation.start({
-        x: '100vw',
+        opacity: '0%',
       });
     }
   }, [inView, animation]);

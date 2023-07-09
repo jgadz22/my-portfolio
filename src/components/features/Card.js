@@ -15,13 +15,13 @@ const Card = ({ title, des, icon }) => {
         transition: {
           duration: 3,
           type: "spring",
-          bounce: 0.3,
+          bounce: 0.1,
         },
       });
     }
     if (!inView) {
       animation.start({
-        y: "100%",
+        y: "1000%",
       });
     }
   }, [inView, animation]);

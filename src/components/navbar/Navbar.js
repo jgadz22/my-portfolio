@@ -10,9 +10,9 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
     <div className="z-20 w-full h-20 lg:h-24 sticky top-0 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
-      <div className="px-4 cursor-pointer">
+      <div className="px-4 cursor-pointer group">
         <Link to="home" spy={true} smooth={true} offset={-70} duration={500}>
-          <img src={logo} alt="logo" width="70" className="rounded-full" />
+          <img src={logo} alt="logo" width="70" className="rounded-full group-active:animate-spin" />
         </Link>
       </div>
       <div className="px-4">
@@ -56,13 +56,13 @@ const Navbar = () => {
             }
           >
             <div>
-              <div className="cursor-pointer">
+              <div className="group cursor-pointer">
               <Link to="home" spy={true} smooth={true} offset={-70} duration={500} onClick={() => setShowMenu(false)}>
                 <img
                   src={logo}
                   alt="logo"
                   width="70"
-                  className="rounded-full"
+                  className="rounded-full group-active:animate-spin"
                 />
                 </Link>
                 <p className="text-sm md:text-md text-gray-400 mt-2 p-2">

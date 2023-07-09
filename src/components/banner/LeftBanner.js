@@ -30,16 +30,17 @@ const LeftBanner = () => {
   useEffect(() => {
     if (inView1) {
       animation1.start({
-        y: 0,
+        opacity: "100%",
         transition: {
           duration: 1,
           type: "spring",
           bounce: 0.3,
         },
+        delay: 1,
       });
     } else {
       animation1.start({
-        y: "-100vw",
+        opacity: "-0%",
       });
     }
   }, [inView1, animation1]);
@@ -47,16 +48,17 @@ const LeftBanner = () => {
   useEffect(() => {
     if (inView2) {
       animation2.start({
-        x: 0,
+        opacity: "100%",
         transition: {
           duration: 1,
           type: "spring",
           bounce: 0.3,
         },
+        delay: 2,
       });
     } else {
       animation2.start({
-        x: "-100vw",
+        opacity: "0%",
       });
     }
   }, [inView2, animation2]);
